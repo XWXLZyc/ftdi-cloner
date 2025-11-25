@@ -142,7 +142,8 @@ class FTDIOperations:
             
             if self.verbose:
                 print("Write done. Current EEPROM dump:")
-                print(hexdump(self.ft.read_eeprom(0, len(data))))
+                # print(hexdump(self.read_eeprom(0, len(data))))
+                
             
             # 'Cycle' the USB device to make the changes active
             if self.verbose:
